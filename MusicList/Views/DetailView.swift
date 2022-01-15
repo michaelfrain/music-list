@@ -24,10 +24,12 @@ struct DetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.3)
                 Text(itemDetail.listItem.artistName)
                     .font(.subheadline)
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.5)
                 
                 Spacer()
                 
@@ -37,6 +39,8 @@ struct DetailView: View {
                 Spacer()
                 
                 Text(itemDetail.copyrightInfo)
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.3)
             }
             Spacer()
             ZStack {
